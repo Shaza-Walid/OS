@@ -104,13 +104,6 @@ simple: Removing Kernel Module
 - If loading fails with `Key was rejected by service`, Secure Boot is blocking unsigned modules. Disable it in the VM settings or sign the modules.
 - If you get `Invalid module format`, rebuild against the headers that match `uname -r`.
 
-## What I learned
-
-- The structure of a kernel module (`module_init`, `module_exit`, license and author macros)
-- Building modules with a Makefile and managing them with `insmod`, `rmmod`, `lsmod` and `dmesg`
-- Using kernel-only values and functions such as `jiffies`, `HZ`, `GOLDEN_RATIO_PRIME` and `gcd()`
-- Creating and removing `/proc` entries with `proc_create()`, `struct proc_ops` and `remove_proc_entry()`
-
 ## Author
 
 Shaza Waleed
